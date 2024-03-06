@@ -236,6 +236,14 @@ pre{
     text-decoration: underline;
 }
 
+footer{
+    border-top: 1px solid var(--lighgray);
+    width: 100%;
+}
+footer>nav{
+    max-width: 680px;
+    margin: 0 auto;
+}
 footer>nav>ul{
     display: flex;
     align-items: center;
