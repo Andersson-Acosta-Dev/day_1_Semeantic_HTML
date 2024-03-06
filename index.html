@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium </title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" type="image/x-icon" href="images/medium.png">
+    <script src="https://kit.fontawesome.com/3b8b956f1a.js" crossorigin="anonymous"></script>
+    <!-- This is the link to the medium document that I am using for this task: 
+    https://medium.com/deno-the-complete-reference/react-coding-puzzles-4421a47246b7
+    -->
+</head>
+<body>
+    <header id="main-header">
+        <div class="main-header-content">
+            <a target="_blank" href="https://medium.com/">
+                <img src="images/medium.png" alt="medium icon">
+            </a>
+            <search>
+                <form action="#" method="POST">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search" >
+                </form>
+            </search>
+        </div>
+        <div  class="main-header-content">
+            <nav>
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://medium.com/new-story">
+                            <i class="fa-regular fa-pen-to-square" style="margin-right: 10px;"></i>Write
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://medium.com/me/notifications">
+                            <i class="fa-regular fa-bell"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="profile"href="#">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="container">
+        <main>
+            <article >
+                <header>
+                    <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*rU4qzkhc7LPFx_U_5YErZg.png" alt="React coding puzzle">
+                    <h1>React Coding Puzzles</h1>
+                    <section id="publisher">
+                        <nav id="publisher-info">
+                            <a target="_blank" href="https://choubey.medium.com/"><i class="fa-regular fa-user"></i></a>
+                            <li><a target="_blank" href="https://choubey.medium.com/">Mayank Choubey . <span>Follow</span></a></li>
+                            <li>Published in <a target="_blank" href="https://medium.com/deno-the-complete-reference">Tech Tonic</a> · 3 min read · 5 days ago</li>
+                        </nav>
+                    </section>
+                    <section id="feedback">
+                        <ul class="like-comment">
+                            <li><i class="fa-solid fa-hands-clapping"></i>61</li>
+                            <li><i class="fa-regular fa-comment"></i>1</li>
+                        </ul>
+                        <ul class="more-options">
+                            <li><i class="fa-regular fa-bookmark"></i></li>
+                            <li><i class="fa-regular fa-circle-play"></i></li>
+                            <li><i class="fa-solid fa-arrow-up-from-bracket"></i></li>
+                            <li><i class="fa-solid fa-ellipsis"></i></li>
+                        </ul>
+                    </section>
+                </header>
+                <blockquote>
+                    This article is a page out of my FREE ebook called 50 React Coding Puzzles. You can view this as a promotion. You should perhaps close this article if you don't like promotions.
+                </blockquote>
+                <section class="introduction">
+                    <h2>Introduction</h2>
+                    <p class="p1">
+                        React, released in 2013 by Facebook, has rapidly become one of the most popular JavaScript libraries for building user interfaces. Its declarative nature and component-based architecture have fueled its widespread adoption, taking it to the top spot in the 2023 Stack Overflow Developer Survey, with over 80% of respondents indicating familiarity or usage. This popularity translates into a high demand for skilled React developers.
+                    </p>
+                    <p>
+                        To assess your knowledge of React, employers hand out React coding challenges, forming a crucial part of the recruitment process. These challenges aim to evaluate a candidate's understanding of core React concepts, such as state management, component lifecycle, and data fetching.
+                    </p>
+                    <p>
+                        Considering the popularity of React, I've collected the commonly asked React coding questions from real interviews and Google search. I've written a free book called: 50 React Coding Puzzles. The book contains 50 common coding challenges along with (one of the best) answers. This book is freely available here:
+                    </p>
+                    <a class="react50" target="_blank" href="https://choubey.gitbook.io/react-coding-puzzles?source=post_page-----4421a47246b7--------------------------------">
+                        <div>
+                            <b>50 React Coding Puzzles</b> <br>
+                            <span>choubey.gitbook.io</span>
+                        </div>
+                        <div>
+                            <img src="https://miro.medium.com/v2/da:true/resize:fit:320/0*Xg4GpwZUElkHtx0A" alt="">
+                        </div>
+                    </a>
+                    <p>
+                        In this article, we'll see one of the puzzle out of the book. This will give you a taste of the contents. Let's get started with the puzzle.
+                    </p>
+                </section>
+                <section class="main-content">
+                    <h3>Unit Converter</h3>
+                    <p class="p1">
+                        This is the puzzle <a target="_blank" href="https://choubey.gitbook.io/react-coding-puzzles/12-unit-converter">#12</a> in the book.
+                    </p>
+                    <h4>Description</h4>
+                    <p class="p1">
+                        Create a React component that allows users to convert between different units of measurement (e.g., Celsius to Fahrenheit, meters to feet).
+                    </p>
+                    <ul class="uld">
+                        <li>Provide input fields for the original value and the desired unit type.</li>
+                        <li>Display the converted value in a clear and readable format.</li>
+                        <li>Offer a selection of conversion categories (e.g., temperature, length, weight).</li>
+                        <li>Include multiple units within each category for flexibility.</li>
+                    </ul>
+                    <h4>Algorithm</h4>
+                    <ul class="uld">
+                        <li>Create a React component with state to manage input values, selected units, and conversion result.</li>
+                        <li>Implement functions to handle user input changes and trigger conversions.</li>
+                        <li>Define conversion formulas for different unit pairs within each category.</li>
+                        <li>Render the input fields, unit selection options, and the converted result using HTML elements and CSS styling.</li>
+                    </ul>
+                    <h4>Code</h4>
+                    <pre>
+                        <code>
+            import React, { useState } from 'react';
+
+            spanconst UnitConverter = () => {
+            const [inputValue, setInputValue] = useState(''); // User input value
+            const [fromUnit, setFromUnit] = useState('celsius'); // Unit to convert from
+            const [toUnit, setToUnit] = useState('fahrenheit'); // Unit to convert to
+            const [convertedValue, setConvertedValue] = useState(''); // Calculated result
+
+            const convert = () => {
+                // Implement your conversion logic here based on selected units and input value.
+                // You can use switch statements, conditional expressions, or helper functions.
+                // For example, converting Celsius to Fahrenheit:
+                if (fromUnit === 'celsius' && toUnit === 'fahrenheit') {
+                setConvertedValue((parseFloat(inputValue) * 9/5) + 32);
+                }
+
+                // Add code for other conversions within different categories and unit pairs
+
+            };
+
+            return (
+                &lt;div className="unit-converter">
+                &lt;h3>Convert Units&lt;/h3>
+                &lt;input
+                    type="number"
+                    placeholder="Enter Value"
+                    value={inputValue}
+                    onChange={(e) => setInputValue(e.target.value)}
+                />
+                &lt;select value={fromUnit} onChange={(e) => setFromUnit(e.target.value)}>
+                    &lt;option value="celsius">Celsius (°C)&lt;/option>
+                    &lt;option value="fahrenheit">Fahrenheit (°F)&lt;/option>
+                    {/* Add more units for temperature and other categories */}
+                &lt;/select>
+                &lt;span>to&lt;/span>
+                &lt;select value={toUnit} onChange={(e) => setToUnit(e.target.value)}>
+                    &lt;option value="fahrenheit">Fahrenheit (°F)&lt;/option>
+                    &lt;option value="celsius">Celsius (°C)&lt;/option>
+                    {/* Add more units for temperature and other categories */}
+                &lt;/select>
+                &lt;button onClick={convert}>Convert&lt;/button>
+                {convertedValue !== '' && &lt;p>Converted Value: {convertedValue}&lt;/p>}
+                &lt;/div>
+            );
+            };
+
+            export default UnitConverter;
+                        </code>
+                    </pre>
+                    <h4>Explanation</h4>
+                    <ul class="uld">
+                        <li>This component uses <strong>useState</strong> hooks to manage user input, selected units, and the converted value.</li>
+                        <li>The convert function handles user input and triggers the conversion logic based on the chosen units.</li>
+                        <li>You'll need to implement conversion formulas for different unit pairs within each category (e.g., temperature, length, weight).</li>
+                        <li>The component renders input fields, unit selection options, a convert button, and displays the calculated result.</li>
+                    </ul>
+                    <h4>Additional Notes</h4>
+                    <ul class="uld">
+                        <li>Adding more unit categories and units within each category.</li>
+                        <li>Implementing conversion logic for additional functionalities like volume, area, speed, etc.</li>
+                        <li>Using mathematical library functions or third-party modules for complex calculations.</li>
+                        <li>Providing more user-friendly features like unit abbreviations, decimal precision options, and error handling.</li>
+                        <li>Implementing a history feature to track past conversions.</li>
+                    </ul>
+                    <p>
+                        That's all about one of the coding puzzle out of the book. For 49 more such coding puzzles, please check out the free book:
+                    </p>
+                    <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*QguRTOidYhr7GGVeSxjC3w.png" alt="image of 50 React Coding Puzzle">
+                    <a class="react50link" target="_blank" href="https://choubey.gitbook.io/react-coding-puzzles" >https://choubey.gitbook.io/react-coding-puzzles</a>
+                    <p>
+                        Thanks for reading this article!
+                    </p>
+                </section>
+                <section id="feedback">
+                    <ul class="like-comment">
+                        <li><i class="fa-solid fa-hands-clapping"></i>61</li>
+                        <li><i class="fa-regular fa-comment"></i>1</li>
+                    </ul>
+                    <ul class="more-options">
+                        <li><i class="fa-regular fa-bookmark"></i></li>
+                        <li><i class="fa-regular fa-circle-play"></i></li>
+                        <li><i class="fa-solid fa-arrow-up-from-bracket"></i></li>
+                        <li><i class="fa-solid fa-ellipsis"></i></li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Status</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Teams</a></li>
+                    <li><a href="#">Text to speech</a></li>
+                    <li><a href="#">Teams</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
